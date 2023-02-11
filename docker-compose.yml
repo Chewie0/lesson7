@@ -8,7 +8,7 @@ services:
       - app-volume:/test/target
 
   web_service:
-    image: bitnami/tomcat:latest
+    image: tomcat:8-alpine
     volumes:
       - app-volume:/usr/local/tomcat/webapps
     ports:
