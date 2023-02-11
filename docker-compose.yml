@@ -8,7 +8,7 @@ services:
       - app-volume:/test/target
 
   web_service:
-    image: tomcat:11.0.0-jdk17
+    image: bitnami/tomcat:latest
     volumes:
       - app-volume:/usr/local/tomcat/webapps
     ports:
